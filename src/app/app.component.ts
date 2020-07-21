@@ -26,10 +26,8 @@ export class AppComponent {
         tap(() => this.loading = true),
         finalize(() => this.loading = false)
       )
-      .subscribe((response: Post) => {
-        this.postResult = response;
-      });
+      .subscribe((response: Post) => this.postResult = response);
   }
 
-  constructor(readonly postService: PostService) { }
+  constructor(readonly postService: PostService) { } // why readonly?
 }
