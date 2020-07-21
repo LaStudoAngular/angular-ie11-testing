@@ -10,6 +10,7 @@ import { PostService } from './service/post.service';
 })
 export class AppComponent {
   public title = 'angular-ie11-testing';
+  public subtitle = 'angular-ie11-testing is running';
   public postResult: Post;
   loading = false;
 
